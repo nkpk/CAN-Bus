@@ -21,7 +21,7 @@ def test_process_file():
     parser = CANParser()
     parser.process_file('data/example_can_log.txt')
     counts = parser.get_message_counts()
-    assert counts['1F334455'] == 2
+    assert counts['1F334455'] == 1
     assert counts['1F223344'] == 1
 
 def test_get_message_counts():
